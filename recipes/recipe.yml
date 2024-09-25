@@ -6,7 +6,9 @@ description: This is my personal OS image.
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/aurora-dx
 image-version: 40 # latest is also supported if you want new updates ASAP
-alt-tags: stable
+alt-tags:
+  - gts
+  - stable
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -19,23 +21,24 @@ modules:
   - type: rpm-ostree
     repos:
       # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
-      baseurl=https://download.copr.fedorainfracloud.org/results/solopasha/hyprland/fedora-$releasever-$basearch/
+      - https://download.copr.fedorainfracloud.org/results/solopasha/hyprland/fedora-$releasever-$basearch/
     install:
-      hyprland
-      waybar
-      swww
-      xdg-desktop-portal-hyprland
-      hyprland-plugins
-      hyprpicker
-      hypridle
-      hyprlock
-      hyprshot
-      aylurs-gtk-shell
-      cliphist
-      nwg-clipman
-      swaylock-effects
-      pyprland
-      ptyxis
+      - hyprland
+      - waybar
+      - swww
+      - xdg-desktop-portal-hyprland
+      - hyprland-plugins
+      - hyprpicker
+      - hypridle
+      - hyprlock
+      - hyprshot
+      - aylurs-gtk-shell
+      - cliphist
+      - nwg-clipman
+      - swaylock-effects
+      - pyprland
+      - ptyxis
+      - zsh
       # - micro
       # - starship
     remove:
@@ -52,8 +55,8 @@ modules:
       # repo-name: flathub
       # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:
-        firefox
-        boxbuddy
+        - firefox
+        - boxbuddy
         # - org.mozilla.firefox
         # - org.gnome.Loupe
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
