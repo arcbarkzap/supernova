@@ -42,7 +42,6 @@ modules:
       - brightnessctl
       - wlr-randr
       - wlsunset
-      - steam
       - wl-clipboard
       - pavucontrol
       - playerctl
@@ -85,6 +84,7 @@ modules:
         - org.kde.filelight
         - org.kde.krita
         - com.github.tchx84.Flatseal
+        - com.valvesoftware.Steam
         # - org.mozilla.firefox
         # - org.gnome.Loupe
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
