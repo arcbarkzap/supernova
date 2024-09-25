@@ -1,8 +1,8 @@
 # supernova &nbsp; [![bluebuild build badge](https://github.com/arcbarkzap/supernova/actions/workflows/build.yml/badge.svg)](https://github.com/arcbarkzap/supernova/actions/workflows/build.yml)
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+This repository was created using BlueBuild. See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
-After setup, it is recommended you update this README to describe your custom image.
+This is a personal image created for my use. Built on top of Aurora-dx with Hyprland installed as well, it is a perfect image for normal day-to-day use and for when I want to get work done with no distractions. **This is a work in progress. Things may not be stable.**
 
 ## Installation
 
