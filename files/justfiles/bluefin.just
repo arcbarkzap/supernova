@@ -10,24 +10,9 @@
 # fix-       = apply fix/patch/workaround for something
 # foo        = no verb is used for shortcuts or something deemed important enough to use a super memorable name
 
-# Run a one minute system benchmark
-benchmark:
-    echo 'Running a 1 minute benchmark ...'
-    cd /tmp && stress-ng --matrix 0 -t 1m --times
-
-# Configure Bluefin-CLI Terminal Experience with Brew
-bluefin-cli:
-    @/usr/libexec/ublue-bling.sh
-
-# Configure Bluefin-CLI Terminal Experience
-[private]
-bluefin-cli-container:
-    @/usr/libexec/enable-bluefin-cli.sh
-
-# Configure Terminal Experience
-[private]
-configure-terminal:
-    @/usr/libexec/configure-terminal.sh
+# Configure Oh My Zsh
+configure-omz:
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Toggle between Bluefin and the Developer Experience
 devmode:
@@ -80,23 +65,6 @@ devmode:
         else
             echo "You are currently not on a developer image"
         fi
-    fi
-
-# Ptyxis terminal transparency
-ptyxis-transparency opacity="0.95":
-    #!/usr/bin/env bash
-    set -euxo pipefail
-    if [[ -n "$(echo "{{ opacity }}" | grep -v '^[.0-9]*$')" ]]; then
-      printf "Value must be numeric: %s.\n" "{{ opacity }}"
-    elif [[ $(echo "0<{{ opacity }} && 1>={{ opacity }}" | bc -q) -eq 1 ]]; then
-      raw="$(gsettings get org.gnome.Ptyxis profile-uuids)"
-      uuids="$(sed -En 's|[^0-9a-z]*||g; s|([0-9a-z]{32})|\1\n|gp' <<<${raw})"
-      for i in ${uuids}; do
-        location="org.gnome.Ptyxis.Profile:/org/gnome/Ptyxis/Profiles/${i}/"
-        gsettings set "${location}" opacity "{{ opacity }}"; done
-      printf "Ptyxis opacity is now %s.\n" "{{ opacity }}"
-    else
-      printf "Value must be greater than 0 and less than or equal to 1: %s.\n" "{{ opacity }}"
     fi
 
 # Configure docker,incus-admin,lxd,libvirt container manager permissions

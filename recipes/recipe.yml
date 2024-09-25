@@ -4,7 +4,7 @@ name: supernova
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/aurora-dx
+base-image: ghcr.io/ublue-os/aurora
 image-version: 40 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -30,12 +30,32 @@ modules:
       - hyprlock
       - hyprshot
       - aylurs-gtk-shell
-      - cliphist
       - nwg-clipman
       - swaylock-effects
       - pyprland
       - ptyxis
       - zsh
+      - zsh-syntax-highlighting
+      - tailscale
+      - rofi-wayland
+      - power-profiles-daemon
+      - brightnessctl
+      - wlr-randr
+      - wlsunset
+      - steam
+      - wl-clipboard
+      - pavucontrol
+      - playerctl
+      - vulkan-validation-layers
+      - vulkan-tools
+      - gnome-disk-utility
+      - network-manager-applet
+      - NetworkManager-openvpn
+      - NetworkManager-openconnect
+      - slurp
+      - grim
+      - kwallet
+      - dunst
       # - micro
       # - starship
     remove:
@@ -54,6 +74,17 @@ modules:
       install:
         - org.mozilla.firefox
         - io.github.dvlv.boxbuddyrs
+        - com.visualstudio.codec
+        - org.kde.kcalc
+        - org.kde.gwenview
+        - org.kde.okular
+        - org.kde.kweather
+        - org.kde.kclock
+        - org.fkoehler.KTailctl
+        - org.kde.haruna
+        - org.kde.filelight
+        - org.kde.krita
+        - com.github.tchx84.Flatseal
         # - org.mozilla.firefox
         # - org.gnome.Loupe
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
@@ -65,6 +96,15 @@ modules:
   
   - type: justfiles
 
+  - type: bling
+    install:
+      - ublue-update
+      - dconf-update-service
+
+  - type: fonts
+    fonts:
+      google-fonts:
+        - Atkinson Hyperlegible
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
