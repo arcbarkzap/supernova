@@ -73,7 +73,7 @@ modules:
       install:
         - org.mozilla.firefox
         - io.github.dvlv.boxbuddyrs
-        - com.visualstudio.codec
+        - com.visualstudio.code
         - org.kde.kcalc
         - org.kde.gwenview
         - org.kde.okular
