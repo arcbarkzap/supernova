@@ -2,7 +2,7 @@
 
 This repository was created using BlueBuild. See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
-This is a personal image created for my use. Built on top of Aurora-dx with Hyprland installed as well, it is a perfect image for normal day-to-day use and for when I want to get work done with no distractions. **This is a work in progress. Things may not be stable.**
+This is a personal image created for my use. Built on top of Aurora with Hyprland installed as well, it is a perfect image for normal day-to-day use and for when I want to get work done with minimal distractions. **This is a work in progress. Things may not be stable.** Hyprland and Waybar configurations are adapted from [wayblue](https://github.com/wayblueorg/wayblue).
 
 ## Installation
 
@@ -29,10 +29,6 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
 
 The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
-
-## ISO
-
-If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
 
 ## Verification
 

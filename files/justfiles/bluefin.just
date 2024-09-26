@@ -196,19 +196,6 @@ pytorch:
     --notebook-dir=/opt/notebooks --ip='*' --port=8888 \
     --no-browser --allow-root"
 
-# Rebase assistant
-rebase-helper:
-    @/usr/bin/ublue-rollback-helper
-
-alias rollback-helper := rebase-helper
-alias switch-channel := rebase-helper
-
-update-ng:
-    echo "Note: This command doesn't work if you have locally layered packages" 
-    sudo bootc upgrade
-    flatpak update -y
-    brew upgrade
-
 # Toggle tailscale
 toggle-tailscale:
     #!/bin/bash
