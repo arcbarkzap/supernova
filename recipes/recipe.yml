@@ -4,7 +4,7 @@ name: supernova
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/aurora
+base-image: ghcr.io/ublue-os/aurora-dx
 image-version: 40 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -33,7 +33,7 @@ modules:
       - nwg-clipman
       - swaylock-effects
       - pyprland
-      - ptyxis
+      # - ptyxis
       - zsh
       - zsh-syntax-highlighting
       - tailscale
@@ -55,6 +55,7 @@ modules:
       - grim
       - kwallet
       - dunst
+      - pamixer
       # - micro
       # - starship
     remove:
@@ -73,7 +74,7 @@ modules:
       install:
         - org.mozilla.firefox
         - io.github.dvlv.boxbuddyrs
-        - com.visualstudio.code
+        # - com.visualstudio.code
         - org.kde.kcalc
         - org.kde.gwenview
         - org.kde.okular

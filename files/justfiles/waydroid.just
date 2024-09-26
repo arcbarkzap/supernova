@@ -1,7 +1,5 @@
 # vim: set ft=make :
 
-alias configure-waydroid := setup-waydroid
-
 # Launch Waydroid configuration helper
 setup-waydroid ACTION="":
     #!/usr/bin/bash
