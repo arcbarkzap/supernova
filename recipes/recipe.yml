@@ -111,6 +111,8 @@ modules:
       # remove hyprland.desktop session entry
       - "rm -rf /usr/share/wayland-sessions/hyprland.desktop"
       - "chmod +x /usr/bin/starthyprland"
+      - "unzip /usr/share/icons/Tela.zip -d /usr/share/icons && rm -rf /usr/share/icons/Tela.zip"
+      - "unzip /usr/share/plasma/look-and-feel/Gently-Color-Global.zip -d /usr/share/plasma/look-and-feel/ && rm -rf /usr/share/plasma/look-and-feel/Gently-Color-Global.zip"
 
   - type: justfiles
 
