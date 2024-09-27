@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=supernova-hl
+Comment=Opinionated Hyprland
+Exec=/usr/bin/starthyprland
+Type=Application

@@ -110,6 +110,7 @@ modules:
       # - "systemctl start --now virtnetworkd.socket virtstoraged.socket virtnodedevd.socket"
       # remove hyprland.desktop session entry
       - "rm -rf /usr/share/wayland-sessions/hyprland.desktop"
+      - "chmod +x /usr/bin/starthyprland"
 
   - type: justfiles
 

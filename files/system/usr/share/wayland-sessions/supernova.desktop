@@ -1,5 +1,0 @@
-[Desktop Entry]
-Name=supernova
-Comment=An intelligent dynamic tiling Wayland compositor
-Exec=/usr/bin/starthyprland
-Type=Application
