@@ -106,8 +106,8 @@ modules:
   - type: script
     snippets: 
       # virt
-      - "systemctl enable virtnetworkd.socket virtstoraged.socket virtnodedevd.socket"
-      - "systemctl start --now virtnetworkd.socket virtstoraged.socket virtnodedevd.socket"
+      # - "systemctl enable virtnetworkd.socket virtstoraged.socket virtnodedevd.socket"
+      # - "systemctl start --now virtnetworkd.socket virtstoraged.socket virtnodedevd.socket"
       # remove hyprland.desktop session entry
       - "rm -rf /usr/share/wayland-sessions/hyprland.desktop"
 
