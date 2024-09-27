@@ -2,7 +2,7 @@
 
 This repository was created using BlueBuild. See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
-This is a personal image created for my use. Built on top of Aurora with Hyprland installed as well, it is a perfect image for normal day-to-day use and for when I want to get work done with minimal distractions. **This is a work in progress. Things may not be stable.** Hyprland and Waybar configurations are adapted from [wayblue](https://github.com/wayblueorg/wayblue).
+This is a personal image created for my use. Built on top of Aurora-dx with Hyprland installed as well, it is a perfect image for normal day-to-day use and for when I want to get work done with minimal distractions. **This is a work in progress. Things may not be stable.** Hyprland and Waybar configurations are adapted from [wayblue](https://github.com/wayblueorg/wayblue).
 
 ## Installation
 

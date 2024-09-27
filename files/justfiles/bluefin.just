@@ -14,59 +14,6 @@
 configure-omz:
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# Toggle between Bluefin and the Developer Experience
-devmode:
-    #!/usr/bin/env bash
-    CURRENT_IMAGE=$(rpm-ostree status -b --json | jq -r '.deployments[0]."container-image-reference"')
-    if grep -q "/var/ublue-os/image" <<< $CURRENT_IMAGE
-    then
-        echo ""
-        echo "Before we can switch to the Bluefin Developer Experience"
-        echo "the current system needs an update. Please run 'ujust update'"
-        echo "and reboot your system when the update is finished"
-        exit
-    fi
-    if grep -q "dx" <<< $CURRENT_IMAGE
-    then
-        CURRENT_STATE="enabled"
-    else
-        CURRENT_STATE="disabled"
-    fi
-    echo "Developer mode is currently ${CURRENT_STATE}"
-    echo "Enable or Disable developer mode"
-    OPTION=$(gum choose Enable Disable)
-    if [ "$OPTION" = "Enable" ]
-    then
-        if [ "$CURRENT_STATE" = "enabled" ]
-        then
-            echo "You are already on a developer image"
-        else
-            echo "Rebasing to a developer image"
-            if [[ "${CURRENT_IMAGE}" =~ "bluefin" ]]; then
-              NEW_IMAGE=$(echo $CURRENT_IMAGE | sed "s/bluefin/bluefin-dx/")
-            elif [[ "${CURRENT_IMAGE}" =~ "aurora" ]]; then
-              NEW_IMAGE=$(echo $CURRENT_IMAGE | sed "s/aurora/aurora-dx/")
-            fi
-            rpm-ostree rebase $NEW_IMAGE
-            echo ""
-            echo "Use `ujust dx-group` to add your user to the correct groups and complete the installation"
-        fi
-    elif [ "$OPTION" = "Disable" ]
-    then
-        if [ "$CURRENT_STATE" = "enabled" ]
-        then
-            echo "Rebasing to a non developer image"
-            if [[ "${CURRENT_IMAGE}" =~ "bluefin" ]]; then
-              NEW_IMAGE=$(echo $CURRENT_IMAGE | sed "s/bluefin-dx/bluefin/")
-            elif [[ "${CURRENT_IMAGE}" =~ "aurora" ]]; then
-              NEW_IMAGE=$(echo $CURRENT_IMAGE | sed "s/aurora-dx/aurora/")
-            fi
-            rpm-ostree rebase $NEW_IMAGE
-        else
-            echo "You are currently not on a developer image"
-        fi
-    fi
-
 # Configure docker,incus-admin,lxd,libvirt container manager permissions
 dx-group:
     sudo usermod -aG docker $USER
