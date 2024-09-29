@@ -1,5 +1,5 @@
 [KDE]
-LookAndFeelPackage=Gently-Color-Global
+LookAndFeelPackage=Gently-Color-Global-6
 SingleClick=false
 widgetStyle=Breeze
 
@@ -15,3 +15,6 @@ font=Atkinson Hyperlegible,10,-1,5,50,0,0,0,0,0
 menuFont=Atkinson Hyperlegible,10,-1,5,50,0,0,0,0,0
 smallestReadableFont=Atkinson Hyperlegible,8,-1,5,50,0,0,0,0,0
 toolBarFont=Atkinson Hyperlegible,9,-1,5,50,0,0,0,0,0
+
+[WM]
+activeFont=Atkinson Hyperlegible,10,-1,5,50,0,0,0,0,0

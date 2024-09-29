@@ -108,11 +108,17 @@ modules:
       # virt
       # - "systemctl enable virtnetworkd.socket virtstoraged.socket virtnodedevd.socket"
       # - "systemctl start --now virtnetworkd.socket virtstoraged.socket virtnodedevd.socket"
+
       # remove hyprland.desktop session entry
       - "rm -rf /usr/share/wayland-sessions/hyprland.desktop"
       - "chmod +x /usr/bin/starthyprland"
+
+      # extract Plasma themes
       - "unzip /usr/share/icons/Tela.zip -d /usr/share/icons && rm -rf /usr/share/icons/Tela.zip"
-      - "unzip /usr/share/plasma/look-and-feel/Gently-Color-Global.zip -d /usr/share/plasma/look-and-feel/ && rm -rf /usr/share/plasma/look-and-feel/Gently-Color-Global.zip"
+      - "tar -xzvf /usr/share/plasma/look-and-feel/Gently-Color-Global-6.tar.gz -C /usr/share/plasma/look-and-feel/ && rm -rf /usr/share/plasma/look-and-feel/Gently-Color-Global-6.tar.gz" # Global Theme
+      - "tar -xzvf /usr/share/plasma/desktoptheme/Gently-Color-Plasma.tar.gz -C /usr/share/plasma/desktoptheme/ && rm -rf /usr/share/plasma/desktoptheme/Gently-Color-Plasma.tar.gz" # Plasma Theme
+      - "tar -xzvf /usr/share/kwin/decorations/Gently-Blur-Dark-Color-Aurorae-6.tar.gz -C /usr/share/kwin/decorations/ && rm -rf /usr/share/kwin/decorations/Gently-Blur-Dark-Color-Aurorae-6.tar.gz" # Window Decorations
+      - "tar -xzvf /usr/share/themes/Gently-Color-GTK.tar.gz -C /usr/share/themes/ && rm -rf /usr/share/themes/Gently-Color-GTK.tar.gz" # GTK Theme
 
   - type: justfiles
 

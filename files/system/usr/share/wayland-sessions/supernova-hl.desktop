@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=supernova-hl
+Name=Hyprland (Custom)
 Comment=Opinionated Hyprland
 Exec=/usr/bin/starthyprland
 Type=Application
