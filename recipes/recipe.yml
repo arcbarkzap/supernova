@@ -117,8 +117,11 @@ modules:
       - "unzip /usr/share/icons/Tela.zip -d /usr/share/icons && rm -rf /usr/share/icons/Tela.zip"
       - "tar -xzvf /usr/share/plasma/look-and-feel/Gently-Color-Global-6.tar.gz -C /usr/share/plasma/look-and-feel/ && rm -rf /usr/share/plasma/look-and-feel/Gently-Color-Global-6.tar.gz" # Global Theme
       - "tar -xzvf /usr/share/plasma/desktoptheme/Gently-Color-Plasma.tar.gz -C /usr/share/plasma/desktoptheme/ && rm -rf /usr/share/plasma/desktoptheme/Gently-Color-Plasma.tar.gz" # Plasma Theme
-      - "tar -xzvf /usr/share/kwin/decorations/Gently-Blur-Dark-Color-Aurorae-6.tar.gz -C /usr/share/kwin/decorations/ && rm -rf /usr/share/kwin/decorations/Gently-Blur-Dark-Color-Aurorae-6.tar.gz" # Window Decorations
+      - "tar -xzvf /usr/share/aurorae/themes/Gently-Blur-Dark-Color-Aurorae-6.tar.gz -C /usr/share/aurorae/themes/ && rm -rf /usr/share/aurorae/themes/Gently-Blur-Dark-Color-Aurorae-6.tar.gz" # Window Decorations
       - "tar -xzvf /usr/share/themes/Gently-Color-GTK.tar.gz -C /usr/share/themes/ && rm -rf /usr/share/themes/Gently-Color-GTK.tar.gz" # GTK Theme
+
+      # change GRUB menu entry
+      - sed -i 's\Bluefin 40 (FROM Fedora Kinoite)\supernova (FROM Aurora-dx 40)\g' /etc/os-release
 
   - type: justfiles
 
