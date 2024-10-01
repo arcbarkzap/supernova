@@ -119,9 +119,8 @@ modules:
       - "tar -xzvf /usr/share/plasma/desktoptheme/Gently-Color-Plasma.tar.gz -C /usr/share/plasma/desktoptheme/ && rm -rf /usr/share/plasma/desktoptheme/Gently-Color-Plasma.tar.gz" # Plasma Theme
       - "tar -xzvf /usr/share/aurorae/themes/Gently-Blur-Dark-Color-Aurorae-6.tar.gz -C /usr/share/aurorae/themes/ && rm -rf /usr/share/aurorae/themes/Gently-Blur-Dark-Color-Aurorae-6.tar.gz" # Window Decorations
       - "tar -xzvf /usr/share/themes/Gently-Color-GTK.tar.gz -C /usr/share/themes/ && rm -rf /usr/share/themes/Gently-Color-GTK.tar.gz" # GTK Theme
-
-      # change GRUB menu entry
-      - "sed -i 's\Bluefin 40 (FROM Fedora Kinoite)\supernova (FROM Aurora-dx 40)\g' /etc/os-release"
+    scripts:
+      - os-release.sh
 
   - type: justfiles
 
