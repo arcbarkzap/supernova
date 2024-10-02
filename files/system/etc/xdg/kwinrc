@@ -1,8 +1,3 @@
-[Desktops]
-Id_1=bd18b259-3419-4011-b2d4-81ec3979c890
-Number=1
-Rows=1
-
 [Effect-mousemark]
 LineWidth=10
 
@@ -24,19 +19,10 @@ DayTemperature=6100
 NightTemperature=5600
 
 [Plugins]
-krohnkiteEnabled=false
 minimizeallEnabled=false
 mousemarkEnabled=true
 videowallEnabled=false
 wobblywindowsEnabled=true
-
-[Script-krohnkite]
-monocleMaximize=false
-screenGapBottom=10
-screenGapLeft=10
-screenGapRight=10
-screenGapTop=10
-tileLayoutGap=10
 
 [Tiling]
 padding=4
