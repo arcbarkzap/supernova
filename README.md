@@ -2,7 +2,7 @@
 
 This repository was created using BlueBuild. See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
-This is a personal image created for my use. Built on top of Aurora-dx with Hyprland installed as well, it is a perfect image for normal day-to-day use and for when I want to get work done with minimal distractions. **This is a work in progress. Things may not be stable.** Hyprland and Waybar configurations are adapted from [wayblue](https://github.com/wayblueorg/wayblue). Plasma theme is [Gently-Color-Global](https://www.pling.com/p/1934188/) and icons are [Tela](https://www.gnome-look.org/p/1279924).
+This is a personal image created for my use. Currently consists of two images: `supernova-plasma` (with KDE Plasma 6) and `cosmos` (with the COSMIC Alpha). **This is a work in progress. Things may not be stable.** Plasma theme is [Gently-Color-Global](https://www.pling.com/p/1934188/) and icons are [Tela](https://www.gnome-look.org/p/1279924). ~~Hyprland and Waybar configurations are adapted from [wayblue](https://github.com/wayblueorg/wayblue).~~ Hyprland version is currently disabled.
 
 ## Installation
 
@@ -13,7 +13,7 @@ To rebase an existing atomic Fedora installation to the latest build:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/arcbarkzap/supernova:latest
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/arcbarkzap/$IMAGE:latest
   ```
 - Reboot to complete the rebase:
   ```
@@ -21,7 +21,7 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
 - Then rebase to the signed image, like so:
   ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/arcbarkzap/supernova:latest
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/arcbarkzap/$IMAGE:latest
   ```
 - Reboot again to complete the installation
   ```

@@ -1,0 +1,1 @@
+adapted https://gitlab.com/fedora/sigs/sway/sway-config-fedora/-/merge_requests/25's adaption by https://github.com/wayblueorg/wayblue/tree/live/files/system/etc/xdg/waybar

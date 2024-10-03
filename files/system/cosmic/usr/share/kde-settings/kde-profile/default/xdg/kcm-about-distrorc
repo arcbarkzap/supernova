@@ -1,0 +1,5 @@
+[General]
+LogoPath=/usr/share/plymouth/themes/spinner/watermark.png
+Name=supernova
+Website=https://github.com/arcbarkzap/supernova
+Variant=supernova

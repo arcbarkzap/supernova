@@ -1,0 +1,20 @@
+[KDE]
+LookAndFeelPackage=Gently-Color-Global-6
+SingleClick=false
+widgetStyle=Breeze
+
+[KDE Control Module Restrictions][$i]
+kcm_plymouth.desktop=false
+
+[General]
+TerminalApplication=kde-ptyxis
+TerminalService=org.gnome.Ptyxis.desktop
+desktopFont=Atkinson Hyperlegible,10,-1,5,50,0,0,0,0,0
+fixed=FiraCode Nerd Font,10,-1,5,50,0,0,0,0,0
+font=Atkinson Hyperlegible,10,-1,5,50,0,0,0,0,0
+menuFont=Atkinson Hyperlegible,10,-1,5,50,0,0,0,0,0
+smallestReadableFont=Atkinson Hyperlegible,8,-1,5,50,0,0,0,0,0
+toolBarFont=Atkinson Hyperlegible,9,-1,5,50,0,0,0,0,0
+
+[WM]
+activeFont=Atkinson Hyperlegible,10,-1,5,50,0,0,0,0,0
