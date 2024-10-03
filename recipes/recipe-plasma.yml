@@ -47,9 +47,6 @@ modules:
       #- dunst
       #- pamixer
 
-      # COSMIC
-      - cosmic-desktop
-
       # misc
       - power-profiles-daemon   
       - vulkan-validation-layers
