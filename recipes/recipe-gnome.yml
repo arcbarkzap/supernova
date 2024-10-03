@@ -17,6 +17,13 @@ modules:
       - vulkan-validation-layers
       - vulkan-tools
       - gnome-disk-utility
+      ### For VM Testing
+      - qemu-guest-agent
+      - ptyxis
+      - mangohud
+      - gamescope
+      - gnome-boxes
+      - variety
     remove:
 
   - type: default-flatpaks
@@ -77,11 +84,9 @@ modules:
       - os-release-gnome.sh
 
   - type: bling
-    install: 
-      - dconf-update-service
-      - gnome-vrr
-
-  - type: justfiles
+    install:
+    - dconf-update-service # a service unit that updates the dconf db on boot
+    - gnome-vrr # enables gnome-vrr for your image
 
   - type: fonts
     fonts:
