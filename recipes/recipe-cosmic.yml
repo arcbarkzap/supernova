@@ -14,8 +14,14 @@ modules:
       # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-%OS_VERSION%/ryanabx-cosmic-epoch-fedora-%OS_VERSION%.repo
     install:
+      - xdg-desktop-portal-cosmic
+      - cosmic-edit
+      - cosmic-bg
+      - cosmic-screenshot
 
     remove:
+      - firefox
+      - firefox-langpacks
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
