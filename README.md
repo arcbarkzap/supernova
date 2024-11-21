@@ -2,7 +2,7 @@
 
 This repository was created using BlueBuild. See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
-This is a personal image created for my use. Currently consists of three images: `supernova` (from Aurora), `astrognomey` (from Bluefin), and `cosmos` (from COSMIC). **This is a work in progress. Things may not be stable.** Plasma theme is [Gently-Color-Global](https://www.pling.com/p/1934188/) and icons are [Tela](https://www.gnome-look.org/p/1279924). ~~Hyprland and Waybar configurations are adapted from [wayblue](https://github.com/wayblueorg/wayblue).~~ Hyprland version is currently disabled.
+This is a personal image created for my use. Currently consists of two images: `supernova` (from aurora), and `bazzite-sn` (from bazzite-nvidia). **This is a work in progress. Things may not be stable.** Plasma theme is [Gently-Color-Global](https://www.pling.com/p/1934188/) and icons are [Tela](https://www.gnome-look.org/p/1279924). Hyprland and Waybar configurations are adapted from [wayblue](https://github.com/wayblueorg/wayblue).
 
 ## Installation
 

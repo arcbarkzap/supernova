@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Hyprland [DEPRECATED]
+Name=Hyprland
 Comment=Opinionated Hyprland
 Exec=/usr/bin/starthyprland
 Type=Application

@@ -1,10 +1,10 @@
 # image will be published to ghcr.io/<user>/<name>
-name: supernova
+name: bazzite-sn
 # description will be included in the image's metadata
-description: This is the KDE Plasma version of my personal OS image.
+description: This is the KDE Plasma version of my personal OS image based on Bazzite.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/aurora
+base-image: ghcr.io/ublue-os/bazzite-nvidia
 image-version: 41 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -14,7 +14,7 @@ modules:
     files:
       - source: system/plasma # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
         destination: /
-      - source: system/hyprland
+      - source: system/hyprland-nv
         destination: /
 
   - type: rpm-ostree
@@ -48,8 +48,9 @@ modules:
       - dunst
       - pamixer
 
-      # misc
-      - power-profiles-daemon   
+      - egl-wayland
+
+      # misc  
       - vulkan-validation-layers
       - vulkan-tools
       - gnome-disk-utility
@@ -58,10 +59,10 @@ modules:
       - kwallet
 
       # virt
-      - qemu
-      - libvirt
-      - virt-manager
-      - virt-install
+      #- qemu
+      #- libvirt
+      #- virt-manager
+      #- virt-install
       # - micro
       # - starship
     remove:
@@ -119,9 +120,7 @@ modules:
       - "tar -xzvf /usr/share/aurorae/themes/Gently-Blur-Dark-Color-Aurorae-6.tar.gz -C /usr/share/aurorae/themes/ && rm -rf /usr/share/aurorae/themes/Gently-Blur-Dark-Color-Aurorae-6.tar.gz" # Window Decorations
       - "tar -xzvf /usr/share/themes/Gently-Color-GTK.tar.gz -C /usr/share/themes/ && rm -rf /usr/share/themes/Gently-Color-GTK.tar.gz" # GTK Theme
     scripts:
-      - os-release-plasma.sh
-
-  - type: justfiles
+      - os-release-bazzite.sh
 
   - type: fonts
     fonts:
