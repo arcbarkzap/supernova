@@ -23,8 +23,7 @@ jobs:
         recipe:
           # !! Add your recipes here 
           - recipe-plasma.yml
-          - recipe-cosmic.yml
-          - recipe-gnome.yml
+          - recipe-bazzite.yml
     steps:
        # the build is fully handled by the reusable github action
       - name: Build Custom Image
