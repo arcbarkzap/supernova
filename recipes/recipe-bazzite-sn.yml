@@ -120,6 +120,10 @@ modules:
       - "tar -xzvf /usr/share/plasma/desktoptheme/Gently-Color-Plasma.tar.gz -C /usr/share/plasma/desktoptheme/ && rm -rf /usr/share/plasma/desktoptheme/Gently-Color-Plasma.tar.gz" # Plasma Theme
       - "tar -xzvf /usr/share/aurorae/themes/Gently-Blur-Dark-Color-Aurorae-6.tar.gz -C /usr/share/aurorae/themes/ && rm -rf /usr/share/aurorae/themes/Gently-Blur-Dark-Color-Aurorae-6.tar.gz" # Window Decorations
       - "tar -xzvf /usr/share/themes/Gently-Color-GTK.tar.gz -C /usr/share/themes/ && rm -rf /usr/share/themes/Gently-Color-GTK.tar.gz" # GTK Theme
+
+      # make the starthyprland file executable
+      - "chmod +x /usr/bin/starthyprland"
+      - "rm /usr/share/wayland-sessions/hyprland.desktop"
     scripts:
       - os-release-bazzite.sh
 
