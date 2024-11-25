@@ -35,6 +35,7 @@ modules:
       - hyprshot
       - aylurs-gtk-shell
       - nwg-clipman
+      - nwg-look
       - swaylock-effects
       - pyprland
       - rofi-wayland
