@@ -92,6 +92,7 @@ modules:
         - org.libreoffice.LibreOffice
         - com.obsproject.Studio
         - com.obsproject.Studio.Plugin.OBSVkCapture
+        - com.discordapp.Discord
         # - org.mozilla.firefox
         # - org.gnome.Loupe
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
@@ -119,8 +120,8 @@ modules:
       - "tar -xzvf /usr/share/themes/Gently-Color-GTK.tar.gz -C /usr/share/themes/ && rm -rf /usr/share/themes/Gently-Color-GTK.tar.gz" # GTK Theme
 
       # make the starthyprland file executable
-      - "chmod +x /usr/bin/starthyprland"
-      - "rm /usr/share/wayland-sessions/hyprland.desktop"
+      #- "chmod +x /usr/bin/starthyprland"
+      #- "rm /usr/share/wayland-sessions/hyprland.desktop"
     scripts:
       - os-release-bazzite.sh
 
