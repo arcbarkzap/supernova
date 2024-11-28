@@ -9,6 +9,24 @@ image-version: 41 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
+stages:
+  - name: walker
+    from: github.com/abenz1267/walker
+    modules:
+      - type: rpm-ostree
+        install:
+          - go
+          - gtk4
+          - gtk4-layer-shell
+          - gobject-introspection
+      - type: script
+        snippets:
+          - "apt-get update && apt-get install -y git go gtk4 gtk4-layer-shell gobject-introspection" # install builds dependencies
+          - "git clone https://github.com/abenz1267/walker /tmp/walker" # clone walker
+          - "cd /tmp/walker/cmd" # cd into walker's build directory
+          - "go build -x -o walker" # build it
+          - "sudo cp walker /usr/bin/" #copy it to /usr/bin
+
 modules:
   - type: files
     files:
@@ -17,43 +35,72 @@ modules:
       - source: system/hyprland-nv
         destination: /
 
+  - type: bling
+    install:
+      - rpmfusion
+
+
   - type: rpm-ostree
     repos:
       # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
       #- https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-%OS_VERSION%/ryanabx-cosmic-epoch-fedora-%OS_VERSION%.repo
     install:
-      - cosmic-app-library
-      - cosmic-applets
-      - cosmic-bg 
-      - cosmic-comp 
-      - cosmic-desktop 
-      - cosmic-edit 
-      - cosmic-epoch 
-      - cosmic-files 
-      - cosmic-icon-theme 
-      - cosmic-idle 
-      - cosmic-launcher 
-      - cosmic-notifications 
-      - cosmic-osd 
-      - cosmic-panel
-      - cosmic-randr
-      - cosmic-screenshot
-      - cosmic-session
-      - cosmic-settings
-      - cosmic-settings-daemon 
-      - cosmic-store 
-      - cosmic-term 
-      - cosmic-workspaces 
-      - pop-launcher 
-      - xdg-desktop-portal-cosmic 
+      # hyprland
+      - hyprland
+      - waybar
+      - xdg-desktop-portal-hyprland
+      - hyprpaper
+      - hyprlock
+      - hypridle
+      - rofi-wayland
 
+      # sound
+      - pavucontrol
+      - wireplumber
+      - pamixer
+      - pulseaudio-utils
+
+      # network
+      - network-manager-applet
+      - NetworkManager-openvpn
+      - NetworkManager-openvpn-gnome
+      - NetworkManager-openconnect
+      - NetworkManager-openconnect-gnome
+      - bluez
+      - bluez-tools
+      - blueman
+      - firewall-config
+
+      # screenshot
+      - slurp
+      - grim
+
+      # display
+      - wlr-randr
+      - wlsunset
+      - brightnessctl
+      - kanshi
+
+      # notifcations
+      - dunst
+
+      # theme
+      - fontawesome-fonts-all
+
+      # system
+      - gnome-disk-utility
+      
+      # build utils
+      - gp
+      - gobject-introspection
       # misc  
       #- vulkan-validation-layers
       #- vulkan-tools
       #- gnome-disk-utility
       #- NetworkManager-openvpn
       #- NetworkManager-openconnect
+
       # virt
       #- qemu
       #- libvirt

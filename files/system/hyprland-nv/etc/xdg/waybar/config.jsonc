@@ -17,18 +17,18 @@
     "modules-right": [
         "idle_inhibitor",
         "pulseaudio",
-        "network",     
+        "network",
+        "power-profiles-daemon",
         "cpu",
         "memory",
         "temperature",
         "backlight",
-        "power-profiles-daemon",
         "battery",
-        "tray",
-        "clock"        
+        "clock",
+        "tray"
     ],
     // Modules configuration
-    "sway/mode": {
+    "hyprland/submap": {
         "format": "<span style=\"italic\">{}</span>"
     },
     "sway/scratchpad": {
