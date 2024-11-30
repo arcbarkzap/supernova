@@ -49,6 +49,15 @@ modules:
       - hypridle
       - rofi-wayland
 
+      # river
+      - river
+      - mako
+      - xdg-desktop-portal-wlr
+      - xdg-desktop-portal-gtk
+      - kitty
+      - swaylock
+      - swayidle
+
       # sound
       - pavucontrol
       - wireplumber
