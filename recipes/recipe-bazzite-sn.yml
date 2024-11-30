@@ -49,15 +49,6 @@ modules:
       - hypridle
       - rofi-wayland
 
-      # river
-      - river
-      - mako
-      - xdg-desktop-portal-wlr
-      - xdg-desktop-portal-gtk
-      - kitty
-      - swaylock
-      - swayidle
-
       # sound
       - pavucontrol
       - wireplumber
@@ -169,6 +160,7 @@ modules:
       #- "rm /usr/share/wayland-sessions/hyprland.desktop"
     scripts:
       - os-release-bazzite.sh
+      - set-grub.sh
 
   - type: fonts
     fonts:
