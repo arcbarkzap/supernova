@@ -6,6 +6,6 @@ set -oue pipefail
 # Clone the repo
 git clone https://github.com/Lxtharia/minegrub-world-sel-theme.git
 cd ./minegrub-world-sel-theme
-sudo cp -ruv ./minegrub-world-selection /boot/grub/themes/
+cp -ruv ./minegrub-world-selection /boot/grub/themes/
 echo "GRUB_THEME=/boot/grub/themes/minegrub-world-selection/theme.txt" >> /etc/default/grub
-sudo grub-mkconfig -o /boot/grub/grub.cfg
+grub-mkconfig -o /boot/grub/grub.cfg
