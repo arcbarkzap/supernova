@@ -162,7 +162,6 @@ modules:
       #- "rm /usr/share/wayland-sessions/hyprland.desktop"
     scripts:
       - os-release-bazzite.sh
-      - set-grub.sh
 
   - type: fonts
     fonts:
