@@ -70,7 +70,7 @@ modules:
       - yambar
       - swaylock
       - swayidle
-      - swww
+      - swaybg
       - xwayland-satellite
 
       # sound
