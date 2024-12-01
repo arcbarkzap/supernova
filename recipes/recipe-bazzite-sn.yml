@@ -9,17 +9,6 @@ image-version: 41 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
-stages:
-  - name: walker
-    from: github.com/abenz1267/walker
-    modules:
-      - type: script
-        snippets:
-          - "apt-get update && apt-get install -y git go gtk4 gtk4-layer-shell gobject-introspection" # install builds dependencies
-          - "git clone https://github.com/abenz1267/walker /tmp/walker" # clone walker
-          - "cd /tmp/walker/cmd" # cd into walker's build directory
-          - "go build -x -o walker" # build it
-          - "cp walker /usr/bin/" #copy it to /usr/bin
 
 modules:
   - type: files
@@ -28,6 +17,8 @@ modules:
         destination: /
       - source: system/hyprland-nv
         destination: /
+      - source: system/plasma/boot
+        destination: /boot
 
   - type: bling
     install:
@@ -70,7 +61,6 @@ modules:
       - yambar
       - swaylock
       - swayidle
-      - swaybg
       - xwayland-satellite
 
       # sound
@@ -99,7 +89,7 @@ modules:
       - kanshi
 
       # notifcations
-      - dunst
+      #- dunst
 
       # theme
       - fontawesome-fonts
@@ -152,7 +142,7 @@ modules:
         - org.libreoffice.LibreOffice
         - com.obsproject.Studio
         - com.obsproject.Studio.Plugin.OBSVkCapture
-        - com.discordapp.Discord
+        - dev.vencord.Vesktop
         # - org.mozilla.firefox
         # - org.gnome.Loupe
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
@@ -180,13 +170,12 @@ modules:
       #- "tar -xzvf /usr/share/themes/Gently-Color-GTK.tar.gz -C /usr/share/themes/ && rm -rf /usr/share/themes/Gently-Color-GTK.tar.gz" # GTK Theme
 
       # regenerate grub
-      #- "grub-mkconfig -o /boot/grub/grub.cfg"
+      - "grub2-mkconfig -o /etc/grub2.cfg"
       # make the starthyprland file executable
       #- "chmod +x /usr/bin/starthyprland"
       #- "rm /usr/share/wayland-sessions/hyprland.desktop"
     scripts:
       - os-release-bazzite.sh
-      - set-drm-vars.sh
 
   - type: fonts
     fonts:
