@@ -170,7 +170,7 @@ modules:
       #- "tar -xzvf /usr/share/themes/Gently-Color-GTK.tar.gz -C /usr/share/themes/ && rm -rf /usr/share/themes/Gently-Color-GTK.tar.gz" # GTK Theme
 
       # regenerate grub
-      - "grub2-mkconfig -o /etc/grub2.cfg"
+      #- "grub2-mkconfig -o /etc/grub2.cfg"
       # make the starthyprland file executable
       #- "chmod +x /usr/bin/starthyprland"
       #- "rm /usr/share/wayland-sessions/hyprland.desktop"
