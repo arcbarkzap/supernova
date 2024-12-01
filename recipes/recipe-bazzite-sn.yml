@@ -49,6 +49,15 @@ modules:
       - hypridle
       - rofi-wayland
 
+      # river
+      - river
+      - mako
+      - xdg-desktop-portal-wlr
+      - xdg-desktop-portal-gtk
+      - kitty
+      - swaylock
+      - swayidle
+
       # sound
       - pavucontrol
       - wireplumber
@@ -149,19 +158,20 @@ modules:
       #- "chmod +x /usr/bin/starthyprland"
 
       # extract Plasma themes
-      - "unzip /usr/share/icons/Tela.zip -d /usr/share/icons && rm -rf /usr/share/icons/Tela.zip"
-      - "tar -xzvf /usr/share/plasma/look-and-feel/Gently-Color-Global-6.tar.gz -C /usr/share/plasma/look-and-feel/ && rm -rf /usr/share/plasma/look-and-feel/Gently-Color-Global-6.tar.gz" # Global Theme
-      - "tar -xzvf /usr/share/plasma/desktoptheme/Gently-Color-Plasma.tar.gz -C /usr/share/plasma/desktoptheme/ && rm -rf /usr/share/plasma/desktoptheme/Gently-Color-Plasma.tar.gz" # Plasma Theme
-      - "tar -xzvf /usr/share/aurorae/themes/Gently-Blur-Dark-Color-Aurorae-6.tar.gz -C /usr/share/aurorae/themes/ && rm -rf /usr/share/aurorae/themes/Gently-Blur-Dark-Color-Aurorae-6.tar.gz" # Window Decorations
-      - "tar -xzvf /usr/share/themes/Gently-Color-GTK.tar.gz -C /usr/share/themes/ && rm -rf /usr/share/themes/Gently-Color-GTK.tar.gz" # GTK Theme
+      #- "unzip /usr/share/icons/Tela.zip -d /usr/share/icons && rm -rf /usr/share/icons/Tela.zip"
+      #- "tar -xzvf /usr/share/plasma/look-and-feel/Gently-Color-Global-6.tar.gz -C /usr/share/plasma/look-and-feel/ && rm -rf /usr/share/plasma/look-and-feel/Gently-Color-Global-6.tar.gz" # Global Theme
+      #- "tar -xzvf /usr/share/plasma/desktoptheme/Gently-Color-Plasma.tar.gz -C /usr/share/plasma/desktoptheme/ && rm -rf /usr/share/plasma/desktoptheme/Gently-Color-Plasma.tar.gz" # Plasma Theme
+      #- "tar -xzvf /usr/share/aurorae/themes/Gently-Blur-Dark-Color-Aurorae-6.tar.gz -C /usr/share/aurorae/themes/ && rm -rf /usr/share/aurorae/themes/Gently-Blur-Dark-Color-Aurorae-6.tar.gz" # Window Decorations
+      #- "tar -xzvf /usr/share/themes/Gently-Color-GTK.tar.gz -C /usr/share/themes/ && rm -rf /usr/share/themes/Gently-Color-GTK.tar.gz" # GTK Theme
 
       # regenerate grub
-      - "grub-mkconfig -o /boot/grub/grub.cfg"
+      #- "grub-mkconfig -o /boot/grub/grub.cfg"
       # make the starthyprland file executable
       #- "chmod +x /usr/bin/starthyprland"
       #- "rm /usr/share/wayland-sessions/hyprland.desktop"
     scripts:
       - os-release-bazzite.sh
+      - set-drm-vars.sh
 
   - type: fonts
     fonts:
