@@ -43,25 +43,28 @@ modules:
       - rofi-wayland
 
       # river
-      #- river
-      #- mako
-      #- xdg-desktop-portal-wlr
-      #- xdg-desktop-portal-gtk
-      #- kitty
-      #- swaylock
-      #- swayidle
-
-      # niri
-      - niri
-      - xdg-desktop-portal-gtk
-      - xdg-desktop-portal-gnome
-      - gnome-keyring
+      - river
       - mako
-      - fuzzel
-      - yambar
+      - xdg-desktop-portal-wlr
+      - xdg-desktop-portal-gtk
+      - kitty
       - swaylock
       - swayidle
-      - xwayland-satellite
+      - wlogout
+      - wlsunset
+
+      # niri
+      #- niri
+      #- xdg-desktop-portal-gtk
+      #- xdg-desktop-portal-gnome
+      #- gnome-keyring
+      #- mako
+      #- fuzzel
+      #- yambar
+      #- swaylock
+      #- swayidle
+      #- wlogout
+      #- xwayland-satellite
 
       # sound
       - pavucontrol
