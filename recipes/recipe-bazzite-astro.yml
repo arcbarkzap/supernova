@@ -33,10 +33,31 @@ modules:
       # If no repo information is specified, Flathub will be used by default
       install:
         - org.mozilla.firefox
-        - org.gnome.Loupe
         - com.obsproject.Studio
         - com.obsproject.Studio.Plugin.OBSVkCapture
         - com.discordapp.Discord
+
+        # GNOME apps
+        - org.gnome.Calculator # Calculator
+        - org.gnome.Calendar # Calendar
+        - org.gnome.Snapshot # Camera
+        - org.gnome.Characters # Characters
+        - org.gnome.clocks # Clocks
+        - org.gnome.Connections # Connections
+        - org.gnome.Contacts # Contacts
+        - ca.desrt.dconf-editor # Dconf Editor
+        - org.gnome.baobab # Disk Usage Analyzer
+        - org.gnome.Evince # Document Viewer
+        - org.gnome.Evolution # Evolution
+        - com.mattjakeman.ExtensionManager # Extension Manager
+        - org.gnome.FileRoller # Archive viewer and extractor
+        - org.gnome.font-viewer # Font Viewer
+        - org.gnome.Loupe # Image Viewer
+        - org.gnome.Logs # Logs
+        - org.gnome.Maps # Maps
+        - org.gnome.seahorse.Application # Seahorse
+        - org.gnome.NautilusPreviewer # Sushi (Nautilus Previewer)
+        - org.gnome.TextEditor # Text Editor
       remove:
         - org.gnome.eog
     user: {} # Also add Flathub user repo, but no user packages
