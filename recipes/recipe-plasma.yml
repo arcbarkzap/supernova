@@ -1,5 +1,5 @@
 # image will be published to ghcr.io/<user>/<name>
-name: supernova
+name: Supernova
 # description will be included in the image's metadata
 description: This is the KDE Plasma version of my personal OS image.
 
