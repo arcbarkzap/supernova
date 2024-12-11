@@ -42,25 +42,7 @@ modules:
       - hypridle
       - rofi-wayland
       - network-manager-applet
-
-      # river
-      - river
-      - foot
-      - rofi-wayland
-      - waybar
-      - swaybg
-      - xdg-desktop-portal-wlr
-      - xdg-desktop-portal-gtk
-      - kitty
-      - swaylock
-      - swayidle
-      - wlogout
-      - wlsunset
-      - wl-clipboard
-      - polkit-gnome
-      - brightnessctl
-      - playerctl
-      - wlrandr
+      - hyprsunset
 
       # niri
       #- niri
@@ -69,7 +51,6 @@ modules:
       #- gnome-keyring
       #- mako
       #- fuzzel
-      #- yambar
       #- swaylock
       #- swayidle
       #- wlogout
