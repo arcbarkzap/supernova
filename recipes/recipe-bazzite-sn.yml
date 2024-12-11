@@ -41,10 +41,14 @@ modules:
       - hyprlock
       - hypridle
       - rofi-wayland
+      - network-manager-applet
 
       # river
       - river
-      - mako
+      - foot
+      - rofi-wayland
+      - waybar
+      - swaybg
       - xdg-desktop-portal-wlr
       - xdg-desktop-portal-gtk
       - kitty
@@ -52,6 +56,11 @@ modules:
       - swayidle
       - wlogout
       - wlsunset
+      - wl-clipboard
+      - polkit-gnome
+      - brightnessctl
+      - playerctl
+      - wlrandr
 
       # niri
       #- niri
@@ -75,9 +84,7 @@ modules:
       # network
       - network-manager-applet
       - NetworkManager-openvpn
-      - NetworkManager-openconnect
-      - bluez
-      - bluez-tools
+      - NetworkManager-openconnects
       - blueman
       - firewall-config
 
@@ -92,7 +99,7 @@ modules:
       - kanshi
 
       # notifcations
-      #- dunst
+      - dunst
 
       # theme
       - fontawesome-fonts
