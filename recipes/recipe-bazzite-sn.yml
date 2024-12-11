@@ -139,7 +139,7 @@ modules:
       # - org.gnome.eog
   
   - type: script
-    snippets: 
+    snippets: []
       # virt
       # - "systemctl enable virtnetworkd.socket virtstoraged.socket virtnodedevd.socket"
       # - "systemctl start --now virtnetworkd.socket virtstoraged.socket virtnodedevd.socket"
