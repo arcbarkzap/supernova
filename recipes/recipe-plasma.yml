@@ -1,5 +1,5 @@
 # image will be published to ghcr.io/<user>/<name>
-name: Supernova
+name: supernova
 # description will be included in the image's metadata
 description: This is the KDE Plasma version of my personal OS image.
 
@@ -66,7 +66,7 @@ modules:
       - virt-install
       # - micro
       # - starship
-    remove:
+    remove: []
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
       #- firefox
@@ -103,7 +103,7 @@ modules:
       # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
       # only normal flatpak applications are (like Floorp Lightning web browser in this example).
       # Installing different branches of the same Flatpak is not supported.
-      remove:
+      remove: []
       # - org.gnome.eog
   
   - type: script
