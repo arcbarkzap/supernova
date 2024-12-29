@@ -4,7 +4,7 @@ name: supernova
 description: This is the KDE Plasma version of my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/aurora-dx
+base-image: ghcr.io/ublue-os/aurora
 image-version: 41 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -47,6 +47,17 @@ modules:
       - swayidle
       - wlogout
       - xwayland-satellite
+      - nemo
+      - nemo-extensions
+      - kvantum
+
+      # river
+      - river
+      - foot
+      - wlsunset
+      - wl-clipboard
+      - polkit-kde
+      - wlrandr
 
       # sound
       #- pavucontrol
