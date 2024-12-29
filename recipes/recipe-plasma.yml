@@ -57,7 +57,6 @@ modules:
       - wlsunset
       - wl-clipboard
       - polkit-kde
-      - wlrandr
 
       # sound
       #- pavucontrol
