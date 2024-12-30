@@ -35,6 +35,8 @@ modules:
       - rofi-wayland
       - network-manager-applet
       - wlogout
+      - qt5ct
+      - qt6ct
 
       # niri
       - niri
@@ -47,8 +49,6 @@ modules:
       - swayidle
       - wlogout
       - xwayland-satellite
-      - nemo
-      - nemo-extensions
       - kvantum
 
       # river
