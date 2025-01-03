@@ -45,7 +45,8 @@ modules:
       # sway - remember to `pip install autotiling`
       - sway
       - swayidle
-      - sawybg
+      - swaybg
+      - foot
       - wob
       - wlr-randr
       - wlsunset
