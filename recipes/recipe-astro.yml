@@ -18,7 +18,6 @@ modules:
       
       # cli
       - micro
-      - starship
 
       # niri
       - niri
