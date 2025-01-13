@@ -1,0 +1,59 @@
+name: astrognomey
+description: This is the standard GNOME version of my image.
+
+base-image: ghcr.io/ublue-os/bluefin
+image-version: latest
+
+modules:
+  - type: files
+    files:
+      - source: system/gnome
+        destination: /
+
+  - type: rpm-ostree
+    repos: 
+      - https://copr.fedorainfracloud.org/coprs/yalter/niri/repo/fedora-%OS_VERSION%/yalter-niri-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/errornointernet/packages/repo/fedora-%OS_VERSION%/errornointernet-packages-fedora-%OS_VERSION%.repo
+    install: 
+      
+      # cli
+      - micro
+      - starship
+
+      # niri
+      - niri
+      - xwayland-satellite
+      - fuzzel
+      - waybar
+      - dunst
+      - wlr-randr
+      - wlsunset
+      - swaybg
+
+      # theme
+      - fontawesome-fonts
+
+      # virt
+      - qemu
+      - libvirt
+      - virt-manager
+      - virt-install
+
+    remove: []
+  
+  - type: default-flatpaks
+    system:
+      install:
+        - org.mozilla.firefox
+      remove: []
+  
+  - type: script
+    scripts:
+      - os-release-astro.sh
+  
+  - type: fonts
+    fonts:
+      google-fonts:
+        - Atkinson Hyperlegible
+
+  - type: signing
