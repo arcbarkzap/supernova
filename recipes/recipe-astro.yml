@@ -55,4 +55,8 @@ modules:
       google-fonts:
         - Atkinson Hyperlegible
 
+  - type: bling
+    install:
+      - dconf-update-service
+
   - type: signing
