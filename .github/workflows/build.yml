@@ -24,7 +24,7 @@ jobs:
           # !! Add your recipes here 
           - recipe-plasma.yml
           - recipe-bazzite-sn.yml
-          - recipe-bazzite-astro.yml
+          - recipe-astro.yml
     steps:
        # the build is fully handled by the reusable github action
       - name: Build Custom Image
