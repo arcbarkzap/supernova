@@ -1,7 +1,7 @@
 name: astrognomey
 description: This is the standard GNOME version of my image.
 
-base-image: ghcr.io/ublue-os/bluefin
+base-image: ghcr.io/ublue-os/silverblue-main
 image-version: latest
 
 modules:
