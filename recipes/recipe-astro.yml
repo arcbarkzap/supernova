@@ -16,12 +16,25 @@ modules:
     install: 
       
       # cli
+      - zsh
       - micro
       - htop
-
-      # cinnamon
-      - cinnamon
-      - nemo
+      
+      # hyprland
+      - hyprland
+      - waybar
+      - xdg-desktop-portal-hyprland
+      - hyprpaper
+      - hyprlock
+      - hypridle
+      - rofi-wayland
+      - network-manager-applet
+      - wlogout
+      - dunst
+      
+      # screenshot
+      - slurp
+      - grim
 
       # theme
       - fontawesome-fonts
