@@ -20,7 +20,8 @@ modules:
       - htop
 
       # cinnamon
-      - "@cinnamon-desktop"
+      - cinnamon
+      - nemo
 
       # theme
       - fontawesome-fonts
