@@ -12,22 +12,37 @@ modules:
 
   - type: rpm-ostree
     repos: 
-      - https://copr.fedorainfracloud.org/coprs/yalter/niri/repo/fedora-%OS_VERSION%/yalter-niri-fedora-%OS_VERSION%.repo
-      - https://copr.fedorainfracloud.org/coprs/errornointernet/packages/repo/fedora-%OS_VERSION%/errornointernet-packages-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-%OS_VERSION%/ryanabx-cosmic-epoch-fedora-%OS_VERSION%.repo
     install: 
       
       # cli
       - micro
+      - htop
 
-      # niri
-      - niri
-      - xwayland-satellite
-      - fuzzel
-      - waybar
-      - dunst
-      - wlr-randr
-      - wlsunset
-      - swaybg
+      # cosmic
+      - cosmic-app-library
+      - cosmic-applets
+      - cosmic-bg
+      - cosmic-comp
+      - cosmic-desktop
+      - cosmic-edit
+      - cosmic-epoch
+      - cosmic-files
+      - cosmic-icon-theme
+      - cosmic-idle
+      - cosmic-launcher
+      - cosmic-notifications
+      - cosmic-osd
+      - cosmic-panel
+      - cosmic-player
+      - cosmic-randr
+      - cosmic-screenshot
+      - cosmic-session
+      - cosmic-settings
+      - cosmic-settings-daemon
+      - cosmic-store
+      - cosmic-term
+      - cosmic-workspaces
 
       # theme
       - fontawesome-fonts
