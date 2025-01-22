@@ -19,7 +19,7 @@ modules:
       - zsh
       - micro
       - htop
-
+      
       # hyprland
       - hyprland
       - waybar
