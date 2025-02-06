@@ -1,5 +1,9 @@
 modules:
     - type: rpm-ostree
+
+      repos:
+      - https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-%OS_VERSION%/ryanabx-cosmic-epoch-fedora-%OS_VERSION%.repo
+      
       install:
         - cosmic-app-library
         - cosmic-applets
