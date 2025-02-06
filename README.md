@@ -2,7 +2,7 @@
 
 This repository was created using BlueBuild. See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
-This is a personal image created for my use. Currently consists of three images: `supernova` (from aurora-dx), `bazzite-sn` (from bazzite-nvidia-open), and `bazzite-astro` (from bazzite-gnome-nvidia-open). **This is a work in progress. Things may not be stable.** Some parts are purely for experimental purposes.
+This is a personal image created for my use. Currently consists of three images: `supernova` (from aurora), `bazzite-sn` (from bazzite-nvidia-open), and `astrognomey` (from ublue/silverblue-main). **This is a work in progress. Things may not be stable.** Some parts are purely for experimental purposes.
 
 Initial Hyprland and Waybar configurations are adapted from [wayblue](https://github.com/wayblueorg/wayblue).
 
