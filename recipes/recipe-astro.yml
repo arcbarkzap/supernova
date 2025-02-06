@@ -5,26 +5,28 @@ base-image: ghcr.io/ublue-os/silverblue-main
 image-version: latest
 
 modules:
-
-  - from-file: common/cosmic.yml
-
   - type: files
     files:
       - source: system/gnome
         destination: /
 
+  - from-file: common/hyprland.yml
+
   - type: rpm-ostree
     repos: []
-    install: 
-      
+    install:   
       # cli
       - micro
       - neovim
       - htop
       - zsh
+      - ranger
 
       # theme
       - fontawesome-fonts
+
+      # system
+      - gnome-disk-utility
 
       # virt
       - qemu
