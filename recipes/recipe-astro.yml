@@ -5,23 +5,25 @@ base-image: ghcr.io/ublue-os/silverblue-main
 image-version: latest
 
 modules:
+
+  - from-file: common/cosmic.yml
+
   - type: files
     files:
       - source: system/gnome
         destination: /
 
   - type: rpm-ostree
-    repos: 
+    repos:
       - https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-%OS_VERSION%/ryanabx-cosmic-epoch-fedora-%OS_VERSION%.repo
+
     install: 
       
       # cli
       - micro
+      - neovim
       - htop
-
-      # cinnamon
-      - cinnamon
-      - nemo
+      - zsh
 
       # theme
       - fontawesome-fonts
@@ -31,6 +33,9 @@ modules:
       - libvirt
       - virt-manager
       - virt-install
+
+      # misc
+      - kde-connect
 
     remove: []
   
