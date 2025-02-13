@@ -9,10 +9,8 @@ modules:
     files:
       - source: system/plasma 
         destination: /
-      - source: system/hyprland-au
-        destination: /
 
-  - from-file: common/cosmic.yml
+  # - from-file: common/cosmic.yml
 
   - type: rpm-ostree
     repos: 
