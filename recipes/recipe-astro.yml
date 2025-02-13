@@ -10,8 +10,6 @@ modules:
       - source: system/gnome
         destination: /
 
-  - from-file: []
-
   - type: rpm-ostree
     repos: 
       - https://repository.mullvad.net/rpm/stable/mullvad.repo
