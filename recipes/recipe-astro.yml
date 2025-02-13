@@ -10,10 +10,11 @@ modules:
       - source: system/gnome
         destination: /
 
-  - from-file: common/hyprland.yml
+  - from-file: []
 
   - type: rpm-ostree
-    repos: []
+    repos: 
+      - https://repository.mullvad.net/rpm/stable/mullvad.repo
     install:   
       # cli
       - micro
@@ -36,6 +37,7 @@ modules:
 
       # misc
       - kde-connect
+      - mullvad-vpn
 
     remove: []
   

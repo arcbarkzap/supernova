@@ -12,10 +12,11 @@ modules:
       - source: system/hyprland-au
         destination: /
 
-  - from-file: common/hyprland.yml
+  - from-file: common/cosmic.yml
 
   - type: rpm-ostree
-    repos: []
+    repos: 
+      - https://repository.mullvad.net/rpm/stable/mullvad.repo
     install:
       # cli
       - micro
@@ -35,6 +36,11 @@ modules:
       - libvirt
       - virt-manager
       - virt-install
+
+      # misc
+      - kde-connect
+      - mullvad-vpn
+      
     remove: []
 
   - type: default-flatpaks

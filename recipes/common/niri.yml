@@ -1,35 +1,35 @@
 modules:
-    - type: rpm-ostree
+  - type: rpm-ostree
 
-      repos:
-        - https://copr.fedorainfracloud.org/coprs/yalter/niri/repo/fedora-%OS_VERSION%/yalter-niri-fedora-%OS_VERSION%.repo
-        - https://copr.fedorainfracloud.org/coprs/errornointernet/packages/repo/fedora-%OS_VERSION%/errornointernet-packages-fedora-%OS_VERSION%.repo
-      
-      install:
-        # niri
-        - niri
-        - xwayland-satellite
-        - xdg-desktop-portal-gtk
-        - xdg-desktop-portal-gnome
-        - gnome-keyring
+    repos:
+      - https://copr.fedorainfracloud.org/coprs/yalter/niri/repo/fedora-%OS_VERSION%/yalter-niri-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/errornointernet/packages/repo/fedora-%OS_VERSION%/errornointernet-packages-fedora-%OS_VERSION%.repo
+    
+    install:
+      # niri
+      - niri
+      - xwayland-satellite
+      - xdg-desktop-portal-gtk
+      - xdg-desktop-portal-gnome
+      - gnome-keyring
 
-        # essentials
-        - waybar
-        - mako
-        - fuzzel
-        - swaylock
-        - swayidle
-        - wlogout
-        - hyprpaper
+      # essentials
+      - waybar
+      - mako
+      - fuzzel
+      - swaylock
+      - swayidle
+      - wlogout
+      - hyprpaper
 
-        # network
-        - network-manager-applet
-        - NetworkManager-openvpn
-        - NetworkManager-openconnect
-        - firewall-config
+      # network
+      - network-manager-applet
+      - NetworkManager-openvpn
+      - NetworkManager-openconnect
+      - firewall-config
 
-        # display
-        - wlr-randr
-        - wlsunset
-        - brightnessctl
-        - kanshi
+      # display
+      - wlr-randr
+      - wlsunset
+      - brightnessctl
+      - kanshi

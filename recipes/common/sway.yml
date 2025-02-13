@@ -1,32 +1,32 @@
 modules:
-    - type: rpm-ostree
+  - type: rpm-ostree
 
-      repos: []
-      
-      install:
-        # sway - remember to `pip install autotiling`
-      - sway
-      - xdg-desktop-portal-wlr
-      - xdg-desktop-portal
-      - swayidle
-      - swaybg
-      - kitty
+    repos: []
+    
+    install:
+      # sway - remember to `pip install autotiling`
+    - sway
+    - xdg-desktop-portal-wlr
+    - xdg-desktop-portal
+    - swayidle
+    - swaybg
+    - kitty
 
-      # essentials
-      - waybar
-      - wlogout
-      - wf-recorder
-      - mako
-      - swaylock-effects
-      - fuzzel
-      - wob
-      - wlr-randr
-      - wlsunset
-      - grim
-      - slurp
+    # essentials
+    - waybar
+    - wlogout
+    - wf-recorder
+    - mako
+    - swaylock-effects
+    - fuzzel
+    - wob
+    - wlr-randr
+    - wlsunset
+    - grim
+    - slurp
 
-      # display
-      - wlr-randr
-      - wlsunset
-      - brightnessctl
-      - kanshi
+    # display
+    - wlr-randr
+    - wlsunset
+    - brightnessctl
+    - kanshi
