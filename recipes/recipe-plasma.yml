@@ -16,7 +16,7 @@ modules:
     repos: 
       - https://repository.mullvad.net/rpm/stable/mullvad.repo
     optfix:
-      - mullvad-vpn
+      - Mullvad VPN
     install:
       # cli
       - micro
