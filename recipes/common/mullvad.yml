@@ -6,3 +6,4 @@ modules:
       - Mullvad VPN
     install:
       - mullvad-vpn
+      - mullvad-browser
