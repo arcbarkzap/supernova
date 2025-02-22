@@ -16,12 +16,10 @@ modules:
 
   - from-file: common/hyprland.yml
   - from-file: common/cosmic.yml
+  - from-file: common/mullvad.yml
 
   - type: rpm-ostree
-    repos: 
-      - https://repository.mullvad.net/rpm/stable/mullvad.repo
-    optfix:
-      - Mullvad VPN
+    repos: []
     install:
       # cli
       - micro
@@ -44,7 +42,6 @@ modules:
 
       # misc
       - kde-connect
-      - mullvad-vpn
 
     remove: []
 

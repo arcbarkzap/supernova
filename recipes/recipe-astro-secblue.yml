@@ -1,7 +1,7 @@
-name: astro
+name: astro-secblue
 description: This is the standard GNOME version of my image.
 
-base-image: ghcr.io/ublue-os/silverblue-main
+base-image: ghcr.io/secureblue/silverblue-main-hardened
 image-version: latest
 
 modules:
@@ -47,7 +47,7 @@ modules:
   
   - type: script
     scripts:
-      - os-release-astro.sh
+      - os-release-astro-secblue.sh
   
   - type: fonts
     fonts:

@@ -1,0 +1,8 @@
+modules:
+  - type: rpm-ostree
+    repos:
+      - https://repository.mullvad.net/rpm/stable/mullvad.repo
+    optfix:
+      - Mullvad VPN
+    install:
+      - mullvad-vpn
