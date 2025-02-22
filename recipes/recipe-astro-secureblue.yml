@@ -1,4 +1,4 @@
-name: astro-secblue
+name: astro-secureblue
 description: This is the standard GNOME version of my image.
 
 base-image: ghcr.io/secureblue/silverblue-main-hardened
