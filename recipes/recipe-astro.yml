@@ -42,7 +42,7 @@ modules:
   - type: default-flatpaks
     system:
       install:
-        - org.mozilla.firefox
+        - one.ablaze.floorp
       remove: []
   
   - type: script
