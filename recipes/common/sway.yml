@@ -11,12 +11,12 @@ modules:
     - swayidle
     - swaybg
     - kitty
+    - SwayNotificationCenter 
 
     # essentials
     - waybar
     - wlogout
     - wf-recorder
-    - mako
     - swaylock-effects
     - fuzzel
     - wob

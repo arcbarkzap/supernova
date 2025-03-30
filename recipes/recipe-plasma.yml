@@ -11,6 +11,8 @@ modules:
         destination: /
 
   - from-file: common/mullvad.yml
+  - from-file: common/cosmic.yml
+  - from-file: common/sway.yml
 
   - type: rpm-ostree
     repos: []
