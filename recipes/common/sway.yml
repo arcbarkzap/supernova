@@ -24,6 +24,7 @@ modules:
     - wlsunset
     - grim
     - slurp
+    - rofi
 
     # display
     - wlr-randr

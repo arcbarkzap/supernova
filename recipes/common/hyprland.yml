@@ -10,7 +10,7 @@ modules:
       - xdg-desktop-portal-hyprland
       - hyprpaper
       - hyprlock
-      - hypridle
+      - swayidle
       - kitty
 
       # essentials
@@ -18,9 +18,10 @@ modules:
       - wlogout
       - fuzzel
       - network-manager-applet
-      - mako
+      - SwayNotificationCenter
       - slurp
       - grim
+      - rofi
 
       # display
       - wlr-randr

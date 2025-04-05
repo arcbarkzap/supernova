@@ -21,6 +21,7 @@ modules:
       - swayidle
       - wlogout
       - hyprpaper
+      - rofi
 
       # network
       - network-manager-applet
