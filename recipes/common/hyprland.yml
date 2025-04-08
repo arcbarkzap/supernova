@@ -21,10 +21,15 @@ modules:
       - SwayNotificationCenter
       - slurp
       - grim
-      - rofi
+
+      # menu extension dependencies
+      - iwd # for iwmenu
+      - bluez # for bzmenu
 
       # display
       - wlr-randr
       - hyprsunset
       - brightnessctl
       - kanshi
+
+  - type: yafti
