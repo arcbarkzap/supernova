@@ -33,3 +33,7 @@ modules:
       - wlsunset
       - brightnessctl
       - kanshi
+
+  - type: justfiles
+    include:
+      - fuzzel-menus.just

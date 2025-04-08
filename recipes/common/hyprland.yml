@@ -32,4 +32,6 @@ modules:
       - brightnessctl
       - kanshi
 
-  - type: yafti
+  - type: justfiles
+    include:
+      - fuzzel-menus.just

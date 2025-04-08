@@ -1,10 +1,10 @@
 # vim: set ft=make :
 
 # Update system, flatpaks, and containers all at once
-update:
-    #!/usr/bin/bash
-    ublue-update --wait
-    /usr/bin/topgrade --config /usr/share/ublue-os/topgrade.toml --keep
+#update:
+#    #!/usr/bin/bash
+#    ublue-update --wait
+#    /usr/bin/topgrade --config /usr/share/ublue-os/topgrade.toml --keep
 
 # Turn automatic updates on or off
 toggle-updates ACTION="prompt":
