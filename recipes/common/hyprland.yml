@@ -25,7 +25,8 @@ modules:
       # menu extension dependencies
       - iwd # for iwmenu
       - bluez # for bzmenu
-
+      - dbus-devel 
+      
       # display
       - wlr-randr
       - hyprsunset
